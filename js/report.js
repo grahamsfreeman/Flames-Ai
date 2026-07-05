@@ -277,3 +277,36 @@ stopBtn.addEventListener("click",()=>{
     showToast("Recording Saved");
 
 });
+/*=========================================
+    AI CHAT
+=========================================*/
+
+const chatMessages = document.getElementById("chatMessages");
+
+aiButton.addEventListener("click", () => {
+
+    const prompt = aiInput.value.trim();
+
+    if(prompt === "") return;
+
+    const user = document.createElement("div");
+
+    user.className = "user-message";
+
+    user.textContent = prompt;
+
+    chatMessages.appendChild(user);
+
+    const ai = document.createElement("div");
+
+    ai.className = "ai-message";
+
+    ai.textContent = "AI integration coming soon...";
+
+    chatMessages.appendChild(ai);
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    aiInput.value = "";
+
+});
