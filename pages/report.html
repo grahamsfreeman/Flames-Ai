@@ -117,17 +117,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 ========================== -->
 
 <div class="ai-command">
+<div class="ai-panel">
 
-    <input
-    type="text"
-    id="aiPrompt"
-    placeholder="Ask Flames AI anything...">
+    <h3>🤖 Flames AI Assistant</h3>
 
-    <button id="sendPrompt">
+    <div id="chatMessages" class="chat-messages">
 
-        <i class="fas fa-paper-plane"></i>
+        <div class="ai-message">
+            Hello! I can help you write, rewrite, summarize, analyze files, generate tables, charts and references.
+        </div>
 
-    </button>
+    </div>
+
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="aiPrompt"
+            placeholder="Ask Flames AI...">
+
+        <button id="sendPrompt">
+            Send
+        </button>
+
+    </div>
 
 </div>
 
