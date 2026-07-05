@@ -391,3 +391,50 @@ color:var(--primary);
 border:2px solid var(--primary);
 
     }
+/*=========================================
+    TOAST
+=========================================*/
+
+#toast{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:15px 20px;
+
+    border-radius:10px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    z-index:9999;
+
+    max-width:300px;
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+}
+
+.save-status{
+
+    color:green;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+    }
