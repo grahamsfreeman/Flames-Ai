@@ -563,3 +563,100 @@ border:2px solid var(--primary);
     word-break:break-word;
 
     }
+/*=========================================
+    AI PANEL
+=========================================*/
+
+.ai-panel{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.chat-messages{
+
+    height:250px;
+
+    overflow-y:auto;
+
+    margin:15px 0;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:10px;
+
+    padding:15px;
+
+}
+
+.ai-message{
+
+    background:#f1f5f9;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+}
+
+.user-message{
+
+    background:#ff6b00;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+    text-align:right;
+
+}
+
+.chat-input{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.chat-input input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+.chat-input button{
+
+    background:#ff6b00;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    }
