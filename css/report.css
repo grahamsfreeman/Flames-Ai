@@ -274,3 +274,120 @@ min-height:500px;
 }
 
   }
+/*=========================
+AI COMMAND
+=========================*/
+
+.ai-command{
+
+display:flex;
+
+gap:10px;
+
+margin-bottom:20px;
+
+}
+
+.ai-command input{
+
+flex:1;
+
+padding:15px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+}
+
+.ai-command button{
+
+background:var(--primary);
+
+color:white;
+
+border:none;
+
+padding:15px 22px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+/*=========================
+TOOLBAR
+=========================*/
+
+.toolbar{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-bottom:20px;
+
+}
+
+.toolbar button{
+
+padding:10px 16px;
+
+border:none;
+
+background:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+/*=========================
+DOCUMENT
+=========================*/
+
+.document{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.block{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.05);
+
+outline:none;
+
+}
+
+.block h2{
+
+margin-bottom:15px;
+
+color:var(--primary);
+
+}
+
+.block:focus{
+
+border:2px solid var(--primary);
+
+    }
