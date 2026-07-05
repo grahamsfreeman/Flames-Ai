@@ -1,0 +1,276 @@
+/*=========================================
+    RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#ff6b00;
+    --dark:#0f172a;
+    --light:#ffffff;
+    --background:#f1f5f9;
+    --border:#e2e8f0;
+    --text:#334155;
+
+}
+
+body{
+
+    font-family:Inter,sans-serif;
+
+    background:var(--background);
+
+}
+
+/*=========================================
+    LAYOUT
+=========================================*/
+
+.studio{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr 350px;
+
+    height:100vh;
+
+}
+
+/*=========================================
+    SIDEBAR
+=========================================*/
+
+.sidebar{
+
+    background:var(--dark);
+
+    color:white;
+
+    padding:25px;
+
+    overflow:auto;
+
+}
+
+.sidebar h2{
+
+    margin-bottom:30px;
+
+}
+
+.generate-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    margin-bottom:30px;
+
+    font-size:1rem;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar li:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.sidebar i{
+
+    margin-right:12px;
+
+}
+
+/*=========================================
+    EDITOR
+=========================================*/
+
+.editor{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    overflow:auto;
+
+}
+
+.title{
+
+    border:none;
+
+    outline:none;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+    background:transparent;
+
+}
+
+.workspace{
+
+    flex:1;
+
+    resize:none;
+
+    border:none;
+
+    outline:none;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+/*=========================================
+    PREVIEW
+=========================================*/
+
+.preview{
+
+    background:#fff;
+
+    border-left:1px solid var(--border);
+
+    padding:25px;
+
+    overflow:auto;
+
+}
+
+.preview h3{
+
+    margin-bottom:20px;
+
+}
+
+.paper{
+
+    background:white;
+
+    min-height:1000px;
+
+    border:1px solid #ddd;
+
+    padding:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.paper h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.paper p{
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+    RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+.studio{
+
+grid-template-columns:220px 1fr;
+
+}
+
+.preview{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.studio{
+
+display:flex;
+
+flex-direction:column;
+
+height:auto;
+
+}
+
+.sidebar{
+
+width:100%;
+
+}
+
+.editor{
+
+padding:20px;
+
+}
+
+.workspace{
+
+min-height:500px;
+
+}
+
+  }
