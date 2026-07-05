@@ -476,3 +476,41 @@ width:95%;
 }
 
   }
+/*=========================================
+  RIPPLE EFFECT
+=========================================*/
+
+.primary-btn,
+.signup-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    animation:ripple .6s linear;
+
+    background:rgba(255,255,255,.5);
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
