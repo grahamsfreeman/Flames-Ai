@@ -39,8 +39,50 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             <li><i class="fas fa-book"></i> Templates</li>
 
             <li><i class="fas fa-folder"></i> Files</li>
+            <div class="upload-box">
+
+    <input
+        type="file"
+        id="fileInput"
+        multiple
+        hidden>
+
+    <button id="uploadBtn">
+
+        <i class="fas fa-upload"></i>
+
+        Upload Files
+
+    </button>
+
+    <div id="fileList">
+
+        <p>No files uploaded.</p>
+
+    </div>
+
+            </div>
 
             <li><i class="fas fa-microphone"></i> Voice</li>
+            <div class="voice-box">
+
+    <h3>Voice Recorder</h3>
+
+    <button id="startRecord">
+
+        🎤 Start Recording
+
+    </button>
+
+    <button id="stopRecord">
+
+        ⏹ Stop Recording
+
+    </button>
+
+    <audio id="audioPlayer" controls></audio>
+
+            </div>
 
             <li><i class="fas fa-comments"></i> AI Chat</li>
 
