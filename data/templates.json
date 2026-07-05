@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Engineering Report",
+    "sections": [
+      "Title Page",
+      "Abstract",
+      "Introduction",
+      "Objectives",
+      "Methodology",
+      "Results",
+      "Discussion",
+      "Conclusion",
+      "Recommendations",
+      "References",
+      "Appendix"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Laboratory Report",
+    "sections": [
+      "Title",
+      "Aim",
+      "Apparatus",
+      "Theory",
+      "Procedure",
+      "Observation",
+      "Calculation",
+      "Result",
+      "Conclusion"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Research Report",
+    "sections": [
+      "Abstract",
+      "Introduction",
+      "Literature Review",
+      "Methodology",
+      "Results",
+      "Discussion",
+      "Conclusion",
+      "References"
+    ]
+  }
+]
