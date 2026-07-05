@@ -1,0 +1,201 @@
+/*=========================================
+  GOOGLE FONTS
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+/*=========================================
+  RESET
+=========================================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+/*=========================================
+  CONTAINER
+=========================================*/
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/*=========================================
+  LEFT PANEL
+=========================================*/
+.left-panel{
+    flex:1;
+    background:linear-gradient(135deg,#ff6b00,#2563eb);
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px;
+    text-align:center;
+}
+
+.brand{
+    font-size:2rem;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.left-panel h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.left-panel p{
+    max-width:420px;
+    font-size:1.1rem;
+    opacity:.95;
+    line-height:1.8;
+}
+
+/*=========================================
+  RIGHT PANEL
+=========================================*/
+.right-panel{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+/*=========================================
+  FORM
+=========================================*/
+form{
+    width:100%;
+    max-width:430px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+form h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-family:'Poppins',sans-serif;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px;
+    border:2px solid #e2e8f0;
+    border-radius:12px;
+    outline:none;
+    transition:.3s;
+    font-size:1rem;
+}
+
+.input-group input:focus{
+    border-color:#ff6b00;
+}
+
+/*=========================================
+  OPTIONS
+=========================================*/
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:.9rem;
+}
+
+.options a{
+    text-decoration:none;
+    color:#ff6b00;
+}
+
+/*=========================================
+  BUTTON
+=========================================*/
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#ff6b00;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e55d00;
+    transform:translateY(-2px);
+}
+
+/*=========================================
+  BOTTOM TEXT
+=========================================*/
+.bottom-text{
+    text-align:center;
+    margin-top:25px;
+}
+
+.bottom-text a{
+    color:#ff6b00;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left-panel{
+    min-height:300px;
+    padding:40px 20px;
+}
+
+.left-panel h1{
+    font-size:2.2rem;
+}
+
+.right-panel{
+    padding:20px;
+}
+
+form{
+    padding:30px 20px;
+}
+
+.options{
+    flex-direction:column;
+    gap:12px;
+    align-items:flex-start;
+}
+
+  }
