@@ -179,3 +179,101 @@ function autoSave(){
     saveStatus.textContent="Saved";
 
       }
+/*=========================================
+    FILE UPLOAD
+=========================================*/
+
+const uploadBtn = document.getElementById("uploadBtn");
+const fileInput = document.getElementById("fileInput");
+const fileList = document.getElementById("fileList");
+
+uploadBtn.addEventListener("click", () => {
+
+    fileInput.click();
+
+});
+
+fileInput.addEventListener("change", () => {
+
+    fileList.innerHTML = "";
+
+    const files = fileInput.files;
+
+    if(files.length === 0){
+
+        fileList.innerHTML = "<p>No files uploaded.</p>";
+
+        return;
+
+    }
+
+    Array.from(files).forEach(file => {
+
+        const div = document.createElement("div");
+
+        div.className = "file-item";
+
+        div.innerHTML = `
+            📄 ${file.name}<br>
+            <small>${(file.size/1024).toFixed(2)} KB</small>
+        `;
+
+        fileList.appendChild(div);
+
+    });
+
+});
+/*=========================================
+    VOICE RECORDER
+=========================================*/
+
+let recorder;
+let audioChunks = [];
+
+const startBtn = document.getElementById("startRecord");
+const stopBtn = document.getElementById("stopRecord");
+const player = document.getElementById("audioPlayer");
+
+startBtn.addEventListener("click", async () => {
+
+    const stream = await navigator.mediaDevices.getUserMedia({
+
+        audio:true
+
+    });
+
+    recorder = new MediaRecorder(stream);
+
+    audioChunks = [];
+
+    recorder.ondataavailable = e => {
+
+        audioChunks.push(e.data);
+
+    };
+
+    recorder.onstop = () => {
+
+        const blob = new Blob(audioChunks,{
+
+            type:"audio/webm"
+
+        });
+
+        player.src = URL.createObjectURL(blob);
+
+    };
+
+    recorder.start();
+
+    showToast("Recording Started");
+
+});
+
+stopBtn.addEventListener("click",()=>{
+
+    recorder.stop();
+
+    showToast("Recording Saved");
+
+});
